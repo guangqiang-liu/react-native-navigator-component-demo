@@ -1,10 +1,8 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Created by guangqiang on 2017/11/1.
  */
 
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {BaseComponent} from './baseComponent/baseComponent'
 import {
   Platform,
@@ -21,25 +19,11 @@ const instructions = Platform.select({
 });
 
 export default class App extends BaseComponent {
-
   navigationBarProps() {
     return {
-      title: 'APP',
-      subTitle: 'subTitle',
-      rightIcon: {
-        name: 'rocket',
-        size: 30,
-        color: 'red'
-      }
+      title: 'APP'
     }
   }
-  onLeftPress() {
-    alert('点击了左边的按钮')
-  }
-  onRightPress() {
-    alert('点击了右边的按钮')
-  }
-
   _render() {
     return (
       <View style={styles.container}>
@@ -53,7 +37,7 @@ export default class App extends BaseComponent {
           {instructions}
         </Text>
       </View>
-    )
+    );
   }
 }
 
