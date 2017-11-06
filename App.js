@@ -28,11 +28,12 @@ export default class App extends BaseComponent {
       subTitle: 'subTitle',
       rightIcon: {
         name: 'rocket',
-        size: 30,
-        color: 'red'
+        size: 20,
+        color: '#333'
       }
     }
   }
+
   onLeftPress() {
     alert('点击了左边的按钮')
   }
